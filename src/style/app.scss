@@ -1,8 +1,33 @@
 // styles in src/style directory are applied to the whole page
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,300i,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+
+html {
+  height: 100%;
+}
+
 body {
-    background: #0147A7;
-    color: #fff;
+  //background: url('/img/plainstar-bg.png');
+  background-size: cover;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  height: 100%;
+  overflow:hidden;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 a {
-    color: #03A9F4;
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
 }
+
+h2, h3 {
+  color: #444;
+  font-weight: lighter;
+}
+

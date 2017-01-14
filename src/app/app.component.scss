@@ -1,27 +1,36 @@
 // styles applied on :host are applied on the current component, "app" in this case
 :host {
-  display: block;
-}
-
-header {
-  background-color: #fff;
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 
-main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
-}
+nav {
+  text-align: right;
+  text-transform: uppercase;
+  margin: 3%;
+  max-height: 30px;
+  position: absolute;
+  right: 0;
 
-footer {
-  text-align: center;
-  font-size: 0.8em;
+  a {
+    margin: 0 10px;
+    font-weight: 300;
+  }
+
+  a.close-nav {
+    color: teal;
+    font-weight: 800;
+  }
+
+  .fa {
+    margin: 0;
+    color: teal;
+    font-size: 2em;
+    float: left;
+  }
+
+  .nav-links {
+    height: 30px;
+    line-height: 30px;
+  }
 }
