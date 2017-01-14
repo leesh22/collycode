@@ -57,7 +57,7 @@ module.exports = function makeWebpackConfig() {
    */
   config.output = isTest ? {} : {
     path: root('dist'),
-    publicPath: isProd ? '/' : 'http://localhost:8080/',
+    publicPath: isProd ? '/' : 'http://localhost:4040/',
     filename: isProd ? 'js/[name].[hash].js' : 'js/[name].js',
     chunkFilename: isProd ? '[id].[hash].chunk.js' : '[id].chunk.js'
   };
@@ -197,7 +197,7 @@ module.exports = function makeWebpackConfig() {
          */
         postcss: [
           autoprefixer({
-            browsers: ['last 2 version']
+            browsers: ['last 2 versions']
           })
         ]
       }
@@ -259,6 +259,7 @@ module.exports = function makeWebpackConfig() {
     contentBase: './src/public',
     historyApiFallback: true,
     quiet: true,
+    port: 4040,
     stats: 'minimal' // none (or false), errors-only, minimal, normal (or true) and verbose
   };
 
