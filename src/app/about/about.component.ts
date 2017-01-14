@@ -1,18 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Animations } from '../shared/transitionAnimation';
 
 @Component({
   selector: 'my-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
+  host: { '[@routeAnimation]': 'true' },
+  animations: Animations.page
 })
-export class AboutComponent implements OnInit {
 
-  constructor() {
-    // Do stuff
-  }
+export class AboutComponent {
 
-  ngOnInit() {
-    console.log('Hello About');
-  }
-
+  constructor() {}
 }
