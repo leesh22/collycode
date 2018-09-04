@@ -1,7 +1,7 @@
 COLLYCODE
 =========
 
-Simple website to showcase my work and skills.
+Website for freelancing services - wanted something seperate to my portfolio
 
 There wont be anything too fancy going on on this website, I will be using the following tech:
 
