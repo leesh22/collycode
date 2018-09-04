@@ -9,4 +9,6 @@ There wont be anything too fancy going on on this website, I will be using the f
 * Webpack
 * SASS
 
+[Click here to view](http://collycode.com/)
+
 If I add any other plugins or services I'll be sure to update the list but for now this is all I need. :)
